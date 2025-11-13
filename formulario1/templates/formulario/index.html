@@ -1,0 +1,112 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="{% static 'formulario/styles.css' %}">
+</head>
+<body>
+
+        <header>
+            <h1>Captura de tiempo muerto</h1>
+        </header>
+
+        <form method="post" class="field-grid-2">
+            {% csrf_token %}
+            <div class="fecha form-row">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <div class="tecnico form-row">
+                <label for="tecnico">Nombre del Técnico:</label>
+                <select id="tecnico" name="tecnico" required placeholder="Seleccione un técnico">
+                    <option value="" disabled selected>Seleccione un técnico</option>
+                    <option value="tecnico2">Edgar Sanchez</option>
+                    <option value="tecnico3">Axel Vazquez</option>
+                </select>
+            </div>
+
+           <div class="tipo_mant form-row">
+                 <label for="tipo_mantenimiento">Tipo de mantenimiento:</label>
+                <select id="tipo_mantenimiento" name="tipo_mantenimiento" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                 <option value="correctivo">Correctivo</option>
+                <option value="preventivo">Preventivo</option>
+        </select>
+           </div>
+
+            <div class="linea form-row">
+                <label for="linea">Línea:</label>
+                <select id="linea" name="linea" required placeholder="Seleccione una línea">
+                    <option value="" disabled selected>Seleccione una línea</option>
+                    <option value="linea1">Línea 1.1 VW</option>
+                    <option value="linea2">Línea 1 Desbaste</option>
+                    <option value="linea3">Línea 2</option>
+                    <option value="linea4">Línea Stream</option>
+                    <option value="linea5">Línea 3</option>
+                    <option value="linea6">Línea 4</option>
+                </select>
+            </div>
+
+            <div class="operacion form-row">
+                <label for="operacion">Operación:</label>
+                <select id="operacion" name="operacion" required placeholder="Seleccione una operación">
+                    <option value="" disabled selected>Seleccione una operación</option>
+                    <option value="MQ-10">MQ-10</option>
+                    <option value="MQ-20">MQ-20</option>
+                    <option value="MQ-30">MQ-30</option>
+                    <option value="MQ-40">MQ-40</option>
+                    <option value="MQ-50">MQ-50</option>
+                    <option value="MQ-60">MQ-60</option>
+                    <option value="MQ-70">MQ-70</option>
+                    <option value="MQ-80">MQ-80</option>
+                    <option value="MQ-90">MQ-90</option>
+                    <option value="MQ-100">MQ-100</option>
+                    <option value="MQ-110">MQ-110</option>
+                    <option value="MQ-120">MQ-120</option>
+                    <option value="MQ-130">MQ-130</option>
+                    <option value="MQ-140">MQ-140</option>
+                </select>
+            </div>
+
+            <div class="tipo_de_falla form-row">
+                <label for="tipo_falla">Tipo de Falla:</label>
+                <select id="tipo_falla" name="tipo_falla" required placeholder="Seleccione un tipo de falla">
+                    <option value="" disabled selected>Seleccione un tipo de falla</option>
+                    <option value="mecanica">Mecánica</option>
+                    <option value="electrica">Eléctrica</option>
+                    <option value="electronica">Electrónica</option>
+                    <option value="neumatica">Neumática</option>
+                    <option value="hidraulica">Hidráulica</option>
+                    <option value="otra">Otra</option>
+                </select>
+            </div>
+
+            <div class="falla form-row">
+                <label for="falla">Falla:</label>
+                <textarea id="falla" name="falla" placeholder="Breve descripción de la falla" rows="3" required></textarea>
+            </div>
+
+            <div class="actividad form-row">
+                <label for="actividad">Solución:</label>
+                <textarea id="actividad" name="actividad" placeholder="Breve descripcion de lo que resolvió la falla" rows="3" required></textarea>
+            </div>
+
+            <div class="refacciones form-row">
+                <label for="refacciones">Refacciones usadas (si aplica):</label>
+                <textarea id="refacciones" name="refacciones" rows="3"></textarea>
+            </div>
+
+            <div class="tiempo_muerto form-row">
+                <label for="tiempo_muerto">Tiempo muerto (minutos):</label>
+                <input type="number" id="tiempo_muerto" name="tiempo_muerto" min="0" required>
+            </div>
+
+            <button type="submit">Guardar registro</button>
+        </form>
+    </div>
+</main>
+</body>
+</html>

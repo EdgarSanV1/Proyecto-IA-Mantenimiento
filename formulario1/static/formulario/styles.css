@@ -1,0 +1,77 @@
+h1 {
+    font-family: 'segoe Ui';
+    font-size: 35px;
+    text-align: center;
+
+}
+
+form {
+    font-family: "segoe Ui", Tahoma, Geneva, Verdana, sans-serif;
+     margin: 10px;
+    padding: 20px;
+    display: inline-block;
+    background-color: rgb(187, 187, 187);
+}
+
+.linea {
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+    background-color: rgb(141, 161, 187);
+}
+
+.fecha {
+    font-family: "segoe Ui", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+    background-color: rgb(187, 161, 141);
+}
+
+.tecnico {
+    font-family: "segoe Ui", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+    background-color: rgb(161, 187, 141);
+}
+
+.operacion {
+    font-family: "segoe Ui", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+    background-color: rgb(141, 187, 161);
+}
+
+.tipo_de_falla {
+    font-family: "segoe Ui", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+    background-color: rgb(187, 141, 161);
+}
+
+.falla {
+    font-family: "segoe Ui", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+    background-color: rgb(161, 141, 187);
+}
+
+.actividad {
+    font-family: "segoe Ui", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+    background-color: rgb(141, 161, 187);
+}
+
+.refacciones {
+    font-family: "segoe Ui", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+    background-color: rgb(187, 161, 141);
+}
